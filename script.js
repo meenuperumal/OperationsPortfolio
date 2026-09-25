@@ -1,0 +1,1 @@
+const o=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add("visible")),{threshold:.1});document.querySelectorAll(".reveal").forEach(e=>o.observe(e));document.querySelectorAll('a[href^="#"]').forEach(a=>a.onclick=e=>{let t=document.querySelector(a.getAttribute("href"));if(t){e.preventDefault();t.scrollIntoView({behavior:"smooth"})}});
